@@ -1,2 +1,217 @@
+<div class="main">
+    <div class="avatar-line">
+        <div class="avatar"><img class="avatar-img" src="image/yoimiya.jpg"></div>
+    </div>
+    <div class="text-line">
+        <div class="text"><span>Hello</span> <span>World</span></div>
+    </div>
+    <div class="navigation-line">
+        <div class="navigation-text underline">通过下面的链接来关注我</div>
+        <nav class="navigation">
+            <ul class="navigation-ul">
+                <li class="navigation-item"><a href="https://blog.csdn.net/qq_39200794" target="_blank"
+                                               class="blog-button">CSDN</a></li>
+                <li class="navigation-item"><a href="https://gitee.com/dearxuan" class="blog-button" target="_blank">Gitee</a>
+                </li>
+                <li class="navigation-item"><a href="https://github.com/DearXuan7392" class="blog-button"
+                                               target="_blank">Github</a></li>
+                <li class="navigation-item"><a href="mailto:mail@dearxuan.com" class="blog-button"
+                                               target="_blank">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
-<h1>yp测试</h1>
+<style>
+        .avatar-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px
+        }
+
+        .avatar {
+            width: 156px;
+            height: 156px
+        }
+
+        .avatar-img {
+            transition: .5s;
+            pointer-events: none;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: solid 3px gray
+        }
+
+        .avatar:hover img {
+            border-color: #fff
+        }
+
+        @font-face {
+            font-family: DearXuanFont;
+            src: url(https://cdn.dearxuan.com/website/font/VarelaRound-Regular.ttf);
+            font-weight: 400;
+            font-style: normal
+        }
+
+        html {
+            font-family: DearXuanFont;
+            background-image: url(https://cdn.dearxuan.com/mainWeb/bkg-img.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%
+        }
+
+        body {
+            position: absolute;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            backdrop-filter: brightness(.7)
+        }
+
+        .main {
+            display: block;
+            position: absolute;
+            width: 350px;
+            height: fit-content;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: #fff
+        }
+
+        * {
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap
+        }
+
+        .underline::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: currentColor;
+            transform: scale(0);
+            transition: all .35s;
+            transform-origin: center
+        }
+
+        .underline:hover::after {
+            transform: scale(100%)
+        }
+
+        nav {
+            display: inline-block;
+            position: relative
+        }
+
+        .navigation-line {
+            position: relative;
+            height: 120px
+        }
+
+        .navigation-text {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 50px
+        }
+
+        .navigation {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 0
+        }
+
+        .navigation-ul {
+            display: inline-block;
+            position: relative;
+            list-style-type: none;
+            white-space: nowrap
+        }
+
+        .navigation-item {
+            display: inline-block;
+            width: 94px;
+            height: fit-content
+        }
+
+        .navigation-item a {
+            font-family: DearXuanFont;
+            transition: .5s;
+            -webkit-text-size-adjust: 100%;
+            user-select: none;
+            list-style-type: none;
+            margin: 0;
+            vertical-align: baseline;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            font-size: .9em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: none;
+            -webkit-font-smoothing: antialiased;
+            display: block;
+            position: relative;
+            color: #fff
+        }
+
+        .navigation-item:hover a {
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff
+        }
+
+        .text {
+            font-size: 60px;
+            width: fit-content;
+            margin: 0 auto;
+            white-space: nowrap
+        }
+
+        .text span {
+            transition: .5s
+        }
+
+        .text:hover span:nth-child(1) {
+            margin-right: 10px
+        }
+
+        .text:hover span:nth-child(2) {
+            margin-left: 10px
+        }
+
+        .text:hover span {
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff
+        }
+
+    </style>
