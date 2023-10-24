@@ -1,26 +1,39 @@
 <div class="main">
     <div class="avatar-line">
-        <div class="avatar"><img class="avatar-img" src="image/yoimiya.jpg"></div>
+        <div class="avatar"><img class="avatar-img" src="https://yp1378.github.io/images/1024.jpg"></div>
     </div>
     <div class="text-line">
-        <div class="text"><span>Hello</span> <span>World</span></div>
+        <div class="text"><span>YP</span> <span>1378</span></div>
     </div>
     <div class="navigation-line">
-        <div class="navigation-text underline">通过下面的链接来关注我</div>
+        <div class="navigation-text underline">通过下面的方式来关注我</div>
         <nav class="navigation">
             <ul class="navigation-ul">
-                <li class="navigation-item"><a href="https://blog.csdn.net/qq_39200794" target="_blank"
+                <li class="navigation-item"><a href="https://blog.csdn.net/qq_52835677" target="_blank"
                                                class="blog-button">CSDN</a></li>
-                <li class="navigation-item"><a href="https://gitee.com/dearxuan" class="blog-button" target="_blank">Gitee</a>
+                <li class="navigation-item"><a href="https://gitee.com/yp1378" class="blog-button" target="_blank">Gitee</a>
                 </li>
-                <li class="navigation-item"><a href="https://github.com/DearXuan7392" class="blog-button"
+                <li class="navigation-item"><a href="https://github.com/YP1378" class="blog-button"
                                                target="_blank">Github</a></li>
-                <li class="navigation-item"><a href="mailto:mail@dearxuan.com" class="blog-button"
-                                               target="_blank">Email</a></li>
+                <li class="navigation-item"><a href="#" id="copyMail" class="blog-button">Email</a></li>
+                <li class="navigation-item"><a href="#" id="copyQQ" class="blog-button">QQ号</a>
+                </li>
             </ul>
         </nav>
     </div>
 </div>
+<script>
+    document.getElementById("copyQQ").addEventListener("click", function () {
+        navigator.clipboard.writeText('1685845224').then(function (){
+            alert("已复制我的QQ号: " + '1685845224');
+        })
+    });
+    document.getElementById("copyMail").addEventListener("click", function () {
+        navigator.clipboard.writeText('1685845224@qq.com').then(function (){
+            alert("已复制我的QQ邮箱: " + '1685845224@qq.com');
+        })
+    });
+</script>
 
 <style>
         .avatar-line {
